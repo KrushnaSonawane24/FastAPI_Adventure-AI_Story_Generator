@@ -9,6 +9,8 @@ endpoints:
       networkVisibilities:
         - Project
         - Public
+build:
+  dockerfile: Dockerfile
 dependencies:
     connectionReferences:
     - name: openai-connection

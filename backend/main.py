@@ -27,14 +27,22 @@ app.include_router(job.router,prefix=settings.API_PREFIX)
 
 @app.get("/")
 def get_function():
-    return {"message":"hello there how are you "}
+    return {"message": "Interactive Story Generator API", "status": "running"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
 
 if __name__ == "__main__":
     import uvicorn
-    import webbrowser
-    from threading import Timer
+    import os
     
-    # Browser 2 seconds baad open hoga
-    Timer(2, lambda: webbrowser.open("http://localhost:8000")).start()
+    # Use PORT from environment (Choreo sets this) or default to 8000
+    port = int(os.getenv("PORT", 8000))
     
-    uvicorn.run(app="main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run(
+        app="main:app",
+        host="0.0.0.0",
+        port=port,
+        reload=True
+    )
