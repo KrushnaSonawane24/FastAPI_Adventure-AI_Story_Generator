@@ -1,9 +1,20 @@
-fastapi[all]>=0.115.12
-langchain>=0.3.25
-langchain-openai>=0.3.18
-psycopg2-binary>=2.9.10
-python-dotenv>=1.1.0
-sqlalchemy>=2.0.41
-uvicorn>=0.34.2
-fastapi
-uvicorn[standard]
+# Core Framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# Database
+sqlalchemy==2.0.36
+
+# Environment & Config
+python-dotenv==1.0.1
+pydantic==2.10.5
+pydantic-settings==2.7.1
+
+# HTTP Requests (for Groq API)
+requests==2.32.3
+
+# Groq SDK (optional, using requests for now)
+groq==0.13.1
+
+# Type hints support
+typing-extensions==4.12.2
