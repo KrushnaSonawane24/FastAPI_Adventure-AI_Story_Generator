@@ -6,12 +6,23 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![React](https://img.shields.io/badge/react-18.0+-61dafb.svg)
+![Deployment](https://img.shields.io/badge/deployed-Render-46E3B7.svg)
 
 **An AI-powered choose-your-own-adventure story generator built with FastAPI and React**
 
 [Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [API](#-api-documentation)
 
+### 🌐 **[Live Demo](https://fastapi-adventure-ai-story-generator-1.onrender.com)** 🚀
+
 </div>
+
+---
+
+## 🎮 Demo
+
+**Try it live:** [https://fastapi-adventure-ai-story-generator-1.onrender.com](https://fastapi-adventure-ai-story-generator-1.onrender.com)
+
+> **Note:** First request may take 30-60 seconds as the free tier server spins up from sleep mode.
 
 ---
 
