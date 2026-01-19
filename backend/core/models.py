@@ -11,8 +11,8 @@ class StoryOptionLLM( BaseModel):
 class StoryNodeLLM(BaseModel):
     content:str=Field(description="the main content of story node ")
     isEnding:bool=Field(description="wether this node is winning node ")
-    isWinnignEnding:bool=Field(description="wether this is node is winning ending node  ")
-    option:Optional[List[StoryOptionLLM]]=Field(default=None)
+    isWinningEnding:bool=Field(description="wether this is node is winning ending node  ")
+    options:Optional[List[StoryOptionLLM]]=Field(default=None)
 
 class StoryLLMResponse(BaseModel):
     title:str=Field(description="the titel of the story")

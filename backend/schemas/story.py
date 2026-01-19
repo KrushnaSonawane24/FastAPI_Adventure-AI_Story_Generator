@@ -8,7 +8,7 @@ from pydantic import BaseModel,Field
 class storyOptionSchema(BaseModel):
     text:Annotated[str,Field()]
 
-    node_id:Optional[str]=None
+    node_id:Optional[int]=None
 
 class StoryNodeBase(BaseModel):
     content:str
