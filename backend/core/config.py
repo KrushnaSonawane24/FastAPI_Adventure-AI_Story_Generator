@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./app.db"
     DEBUG: bool = True
     ALLOWED_ORIGINS: str = "*"
-    GOOGLE_API_KEY: str = ""
+    GROQ_API_KEY: str = ""
 
     @field_validator("ALLOWED_ORIGINS")
     def parse_allowed_origins(cls, v: str) -> List[str]:

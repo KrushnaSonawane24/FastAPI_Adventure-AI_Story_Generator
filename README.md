@@ -234,7 +234,7 @@ DATABASE_URL=sqlite:///./database.db
 API_PREFIX=/api
 DEBUG=True
 ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173
-GOOGLE_API_KEY=your_groq_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
 ### Frontend API Configuration

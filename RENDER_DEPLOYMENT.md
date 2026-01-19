@@ -35,7 +35,7 @@ git push origin main
 2. Click "Environment" tab
 3. Add these variables:
    ```
-   GOOGLE_API_KEY = your_groq_api_key_here
+   GROQ_API_KEY = your_groq_api_key_here
    ALLOWED_ORIGINS = https://your-frontend-name.onrender.com
    ```
 
@@ -83,7 +83,7 @@ Render will auto-redeploy frontend!
 3. **Environment Variables**:
    ```
    PYTHON_VERSION = 3.11.0
-   GOOGLE_API_KEY = your_groq_api_key
+   GROQ_API_KEY = your_groq_api_key
    ALLOWED_ORIGINS = https://your-frontend.onrender.com
    DATABASE_URL = sqlite:///./database.db
    DEBUG = False

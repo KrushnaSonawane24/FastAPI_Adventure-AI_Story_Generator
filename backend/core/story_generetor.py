@@ -12,9 +12,9 @@ load_dotenv()
 class StoryGenerator:
     @classmethod
     def _get_groq_response(cls, prompt: str) -> str:
-        api_key = os.getenv("GOOGLE_API_KEY")  # Using same env var name for Groq key
+        api_key = os.getenv("GROQ_API_KEY")
         if not api_key:
-            raise ValueError("GOOGLE_API_KEY (Groq API key) not found in environment variables")
+            raise ValueError("GROQ_API_KEY not found in environment variables")
         
         headers = {
             "Authorization": f"Bearer {api_key}",
